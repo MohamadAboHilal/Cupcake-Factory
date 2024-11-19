@@ -1,0 +1,28 @@
+. * {
+  background-color: whitesmoke;
+}
+
+#logo-heading {
+  font-family: "Mona Sans", sans-serif;
+  font-weight: bold;
+  color: #d40372;
+  font-size: larger;
+}
+
+#nav-links {
+  font-family: "Mona Sans", sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+#title-footer {
+  font-family: "Mona Sans", sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+#nav-links-footer {
+  font-family: "Mona Sans", sans-serif;
+  font-weight: bolder;
+  font-size: small;
+}
