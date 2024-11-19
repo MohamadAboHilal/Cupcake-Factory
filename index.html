@@ -4,14 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sweet Delights</title>
+    <!-- Tailwind Script-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Cupcake Fav Icon-->
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧁</text></svg>"
     />
+    <!--Custom Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Stylesheet Link-->
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header class="" id="header">
-      <!--HERE HEADER-->
+  <!--Start Body-->
+  <body class="container mx-auto px-4">
+    <!-- Header -->
+    <header class="text-black py-4 px-6">
+      <div class="flex items-center justify-between">
+        <!-- Logo and Heading -->
+        <div class="flex items-center">
+          <h1 class="" id="logo-heading">🧁 Sweet Delights</h1>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+          <ul class="flex space-x-6" id="nav-links">
+            <li>
+              <a
+                href="#home"
+                class="font-semibold transition-colors hover:text-[#d40372]"
+                >Our Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="font-semibold transition-colors hover:text-[#d40372]"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#faq"
+                class="font-semibold transition-colors hover:text-[#d40372]"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main id="content">
@@ -22,8 +68,84 @@
         <!--HERE CARDS-->
       </section>
     </main>
-    <footer class="" id="footer">
-      <!--HERE FOOTER-->
+
+    <footer class="">
+      <div class="flex flex-col space-y-4 max-w-screen-xl mx-auto">
+        <div class="flex items-center justify-between">
+          <!-- Left Navigation -->
+          <nav>
+            <ul class="flex space-x-6" id="nav-links-footer">
+              <li>
+                <a
+                  href="#about"
+                  class="font-semibold transition-colors hover:text-[#d40372]"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="font-semibold transition-colors hover:text-[#d40372]"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#support"
+                  class="font-semibold transition-colors hover:text-[#d40372]"
+                  >Support</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Centered Title -->
+          <div class="text-center">
+            <h1 id="title-footer" class="">
+              <span class="text-[#d40372]">Sweet Delights</span>
+              <span class="text-black">Cupcakes</span>
+            </h1>
+          </div>
+
+          <!-- Right Navigation -->
+          <nav>
+            <ul class="flex space-x-6" id="nav-links-footer">
+              <li>
+                <a
+                  href="#home"
+                  class="font-semibold transition-colors hover:text-[#d40372]"
+                  >Our Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#press"
+                  class="font-semibold transition-colors hover:text-[#d40372]"
+                  >Press</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#faq"
+                  class="font-semibold transition-colors hover:text-[#d40372]"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <p class="text-center text-xs">
+            © Made with 🩷 -
+            <a
+              class="transition-colors hover:text-[#d40372] underline"
+              href="#privacy-terms"
+              >Privacy - Terms</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
