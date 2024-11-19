@@ -1,5 +1,6 @@
 * {
   background-color: whitesmoke;
+  font-family: "Mona Sans", sans-serif;
 }
 
 #logo-heading {
@@ -24,5 +25,5 @@
 #nav-links-footer {
   font-family: "Mona Sans", sans-serif;
   font-weight: bolder;
-  font-size: small;
+  font-size: medium;
 }
