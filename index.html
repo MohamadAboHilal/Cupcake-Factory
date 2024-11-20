@@ -20,6 +20,23 @@
     />
     <!--Stylesheet Link-->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Tailwind CSS IntelliSense -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pinky: "#d40372",
+              pinkyd: "#c4056a",
+            },
+          },
+        },
+      };
+      module.exports = {
+        content: ["./src/**/*.{html,js}"],
+        theme: {},
+      };
+    </script>
   </head>
   <!--Start Body-->
   <body class="container mx-auto px-4">
@@ -61,27 +78,43 @@
     </header>
 
     <main id="content">
-      <section class="flex flex-col" id="hero">
+      <section class="flex flex-row m-10" id="hero">
         <!--HERE HERO-->
-        <h1 class="text-4xl">Sweet Delights Cupcakes</h1>
-        <h2 class="text-2xl">Indulge in a World of Flavor</h2>
-        <p>
-          At Sweet Delights, we believe that every cupcake tells a story. Our
-          artisanal cupcakes are crafted with love and the finest ingredients,
-          offering a delightful experience that tantalizes your taste buds. From
-          classic vanilla and rich chocolate to innovative flavors like lavender
-          honey and salted caramel, there's a cupcake for every craving. Join us
-          in our cozy shop or order online to savor the magic of our sweet
-          creations, perfect for any occasion or just because you deserve a
-          treat!
-        </p>
-        <button
-          class="bg-pink-500 hover:bg-pink-700 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-          type="submit"
-        >
-          Order Now
-        </button>
-        <img src="#" alt="Image of a Cupcake" />
+        <div id="hero-left">
+          <div class="flex flex-col mr-12" id="hero-text">
+            <h1 class="text-4xl mb-1 font-bold">
+              <div class="inline-block text-pinky">Sweet Delights</div>
+              Cupcakes
+            </h1>
+            <h2 class="text-2xl mb-4 font-bold">
+              Indulge in a World of Flavor
+            </h2>
+            <p class="mb-4">
+              At Sweet Delights, we believe that every cupcake tells a story.
+              Our artisanal cupcakes are crafted with love and the finest
+              ingredients, offering a delightful experience that tantalizes your
+              taste buds. From classic vanilla and rich chocolate to innovative
+              flavors like lavender honey and salted caramel, there's a cupcake
+              for every craving. Join us in our cozy shop or order online to
+              savor the magic of our sweet creations, perfect for any occasion
+              or just because you deserve a treat!
+            </p>
+            <button
+              class="w-28 h-8 px-4 text-sm text-white transition-colors duration-150 bg-pinky rounded-lg focus:drop-shadow-md hover:bg-pinkyd active:scale-95"
+              type="submit"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div class="-rotate-12" id="hero-right">
+          <img
+            width="400px"
+            class="max-w-full"
+            src="hero-temp.png"
+            alt="Image of a Cupcake"
+          />
+        </div>
       </section>
       <section class="" id="cards">
         <!--HERE CARDS-->
