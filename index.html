@@ -78,12 +78,15 @@
     </header>
 
     <main id="content">
-      <section class="flex flex-row m-10" id="hero">
+      <section
+        class="flex flex-wrap sm:flex-nowrap sm:flex-row m-10 gap-3 items-center justify-center"
+        id="hero"
+      >
         <!--HERE HERO-->
-        <div id="hero-left">
-          <div class="flex flex-col mr-12" id="hero-text">
+        <div class="shrink-[2]" id="hero-left">
+          <div class="flex flex-col" id="hero-text">
             <h1 class="text-4xl mb-1 font-bold">
-              <div class="inline-block text-pinky">Sweet Delights</div>
+              <span class="inline-block text-pinky">Sweet Delights</span>
               Cupcakes
             </h1>
             <h2 class="text-2xl mb-4 font-bold">
@@ -107,10 +110,9 @@
             </button>
           </div>
         </div>
-        <div class="-rotate-12" id="hero-right">
+        <div class="" id="hero-right">
           <img
-            width="400px"
-            class="max-w-full"
+            class="w-36 sm:w-56"
             src="hero-temp.png"
             alt="Image of a Cupcake"
           />
