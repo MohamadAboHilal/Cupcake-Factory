@@ -20,6 +20,23 @@
     />
     <!--Stylesheet Link-->
     <link rel="stylesheet" href="./src/styles.css" />
+    <!-- Tailwind CSS IntelliSense -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pinky: "#d40372",
+              pinkyd: "#c4056a",
+            },
+          },
+        },
+      };
+      module.exports = {
+        content: ["./src/**/*.{html,js}"],
+        theme: {},
+      };
+    </script>
   </head>
   <!--Start Body-->
   <body class="container mx-auto px-4">
@@ -67,8 +84,45 @@
     </header>
 
     <main id="content">
-      <section id="hero" class="">
-        <!-- Add your HERO content -->
+      <section
+        class="flex flex-wrap sm:flex-nowrap sm:flex-row m-10 gap-3 items-center justify-center"
+        id="hero"
+      >
+        <!--HERE HERO-->
+        <div class="shrink-[2]" id="hero-left">
+          <div class="flex flex-col" id="hero-text">
+            <h1 class="text-4xl mb-1 font-bold">
+              <span class="inline-block text-pinky">Sweet Delights</span>
+              Cupcakes
+            </h1>
+            <h2 class="text-2xl mb-4 font-bold">
+              Indulge in a World of Flavor
+            </h2>
+            <p class="mb-4">
+              At Sweet Delights, we believe that every cupcake tells a story.
+              Our artisanal cupcakes are crafted with love and the finest
+              ingredients, offering a delightful experience that tantalizes your
+              taste buds. From classic vanilla and rich chocolate to innovative
+              flavors like lavender honey and salted caramel, there's a cupcake
+              for every craving. Join us in our cozy shop or order online to
+              savor the magic of our sweet creations, perfect for any occasion
+              or just because you deserve a treat!
+            </p>
+            <button
+              class="w-28 h-8 px-4 text-sm text-white text-center transition-colors duration-150 bg-pinky rounded-lg focus:drop-shadow-md hover:bg-pinkyd active:scale-95"
+              type="submit"
+            >
+            Order Now
+            </button>
+          </div>
+        </div>
+        <div class="" id="hero-right">
+          <img
+            class="w-56 sm:w-96"
+            src="./src/assets/hero-cupcake.png"
+            alt="Image of a Cupcake"
+          />
+        </div>
       </section>
       <!--HERE CARDS-->
       <!-- Cards Heading -->
@@ -191,6 +245,11 @@
                   Order Now
                 </button>
               </div>
+              <div class="flex flex-col justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+                <div class="inline-flex items-center justify-center px-4 py-2.5 text-base text-center font-bold text-xl mb-2">€ 4,60</div>
+              <button class="inline-flex items-center justify-center px-4 py-2.5 bg-[#d40372] hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">
+                Order Now
+              </button>
             </div>
           </div>
         </div>
