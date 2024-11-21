@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     <!--Stylesheet Link-->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
     <!-- Tailwind CSS IntelliSense -->
     <script>
       tailwind.config = {
@@ -124,35 +124,127 @@
           />
         </div>
       </section>
-      <section class="" id="cards">
-        <!--HERE CARDS-->
-        <!-- Cards Heading -->
-        <div class="flex space-x-1 "><div class="font-bold text-xl ">Our</div><div class="font-bold text-xl text-[#d40372] ">Cupcakes</div></div>
-        <!-- Card layout -->
-        <div class="border border-[#d40372] max-w-sm rounded-xl overflow-hidden">
-          <!-- Card Img -->
-          <img
-            class="w-full"
-            src="./src/assets/Classic_Vanilla_Bliss.png"
-            alt="Classic Vanilla Bliss"
-          />
-          <!-- Text Spacing -->
-          <div class="px-6 py-4">
-            <!-- Card Heading -->
-            <div class="font-bold text-xl mb-2">Classic Vanilla Bliss</div>
-            <!-- Card Paragraph -->
-            <p class="text-gray-700 text-base">
-              Fluffy vanilla sponge topped with a swirl of creamy buttercream
-              frosting and a touch of rainbow sprinkles for a timeless treat.
+      <!--HERE CARDS-->
+      <!-- Cards Heading -->
+      <div class="flex space-x-1 justify-start m-8">
+        <div class="font-bold text-xl">Our</div>
+        <div class="font-bold text-xl text-[#d40372]">Cupcakes</div>
+      </div>
+      <!-- Card layout -->
+      <section class="flex flex-wrap justify-center gap-4" id="cards">
+        <!-- CARD 1 -->
+        <div id="card1">
+          <div
+            class="border border-[#d40372] max-w-sm rounded-xl overflow-hidden"
+          >
+            <!-- Card Img -->
+            <img
+              class="p-4 object-cover h-80 w-96 rounded-lg"
+              src="./src/assets/cupcake_1.jpg"
+              alt="Classic Vanilla Bliss"
+            />
+            <!-- Text Spacing -->
+            <div class="px-6 py-6">
+              <!-- Card Heading -->
+              <div class="font-bold text-xl mb-2">Decadent White Choc</div>
+              <!-- Card Paragraph -->
+              <p class="text-gray-700 text-base">
+                Rich, moist chocolate cupcake crowned with smooth chocolate
+                ganache and a sprinkle of dark chocolate shavings.
+              </p>
               <!-- CTA Button -->
-              <div class="flex flex-col justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-                <div class="inline-flex items-center justify-center px-4 py-2.5 text-base text-center font-bold text-xl mb-2">€ 4,60</div>
-              <button class="inline-flex items-center justify-center px-4 py-2.5 bg-[#d40372] hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">
-                Order Now
-              </button>
-
+              <div
+                class="flex flex-col justify-center py-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 gap-4"
+              >
+                <div
+                  class="inline-flex items-center justify-center text-base text-center font-bold text-xl mb-2"
+                >
+                  € 4,60
+                </div>
+                <button
+                  class="inline-flex items-center justify-center px-4 py-2.5 bg-[#d40372] hover:bg-pink-700 text-white font-regular py-2 px-4 rounded-xl"
+                >
+                  Order Now
+                </button>
+              </div>
             </div>
-            </p>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div id="card2">
+          <div
+            class="border border-[#d40372] max-w-sm rounded-xl overflow-hidden"
+          >
+            <!-- Card Img -->
+            <img
+              class="p-4 object-cover h-80 w-96 rounded-lg"
+              src="./src/assets/cupcake_2.jpg"
+              alt="Classic Vanilla Bliss"
+            />
+            <!-- Text Spacing -->
+            <div class="px-6 py-6">
+              <!-- Card Heading -->
+              <div class="font-bold text-xl mb-2">Blueberry Lemon Burst</div>
+              <!-- Card Paragraph -->
+              <p class="text-gray-700 text-base">
+                Light and tangy lemon-infused cupcake topped with citrus
+                buttercream and a candied lemon slice for a refreshing twist.
+              </p>
+              <!-- CTA Button -->
+              <div
+                class="flex flex-col justify-center py-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 gap-4"
+              >
+                <div
+                  class="inline-flex items-center justify-center text-base text-center font-bold text-xl mb-2"
+                >
+                  € 4,60
+                </div>
+                <button
+                  class="inline-flex items-center justify-center px-4 py-2.5 bg-[#d40372] hover:bg-pink-700 text-white font-regular py-2 px-4 rounded-xl"
+                >
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div id="card3">
+          <div
+            class="border border-[#d40372] max-w-sm rounded-xl overflow-hidden"
+          >
+            <!-- Card Img -->
+            <img
+              class="p-4 object-cover h-80 w-96 rounded-lg"
+              src="./src/assets/cupcake_3.jpg"
+              alt="Classic Vanilla Bliss"
+            />
+            <!-- Text Spacing -->
+            <div class="px-6 py-6">
+              <!-- Card Heading -->
+              <div class="font-bold text-xl mb-2">Classic Vanilla Bliss</div>
+              <!-- Card Paragraph -->
+              <p class="text-gray-700 text-base">
+                Fluffy vanilla sponge topped with a swirl of creamy buttercream
+                frosting and a touch of rainbow sprinkles for a timeless treat.
+              </p>
+              <!-- CTA Button -->
+              <div
+                class="flex flex-col justify-center py-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 gap-4"
+              >
+                <div
+                  class="inline-flex items-center justify-center text-base text-center font-bold text-xl mb-2"
+                >
+                  € 4,60
+                </div>
+                <button
+                  class="inline-flex items-center justify-center px-4 py-2.5 bg-[#d40372] hover:bg-pink-700 text-white font-regular py-2 px-4 rounded-xl"
+                >
+                  Order Now
+                </button>
+              </div>
           </div>
         </div>
       </section>
