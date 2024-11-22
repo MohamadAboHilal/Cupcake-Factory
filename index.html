@@ -20,7 +20,7 @@
     />
     <!--Stylesheet Link-->
     <link rel="stylesheet" href="./src/styles.css" />
-    <!-- Tailwind CSS IntelliSense -->
+    <!-- Tailwind Config -->
     <script>
       tailwind.config = {
         theme: {
@@ -45,7 +45,9 @@
         <div
           class="flex items-center w-full md:w-auto justify-center md:justify-start"
         >
-          <h1 id="logo-heading" class="text-lg font-bold">🧁 Sweet Delights</h1>
+          <h1 id="logo-heading" class="text-[larger] font-bold text-pinky">
+            🧁 Sweet Delights
+          </h1>
         </div>
 
         <!-- Navigation -->
@@ -56,21 +58,21 @@
             <li>
               <a
                 href="#home"
-                class="font-semibold transition-colors hover:text-[#d40372]"
+                class="font-semibold transition-colors hover:text-pinky"
                 >Our Menu</a
               >
             </li>
             <li>
               <a
                 href="#about"
-                class="font-semibold transition-colors hover:text-[#d40372]"
+                class="font-semibold transition-colors hover:text-pinky"
                 >Contact</a
               >
             </li>
             <li>
               <a
                 href="#faq"
-                class="font-semibold transition-colors hover:text-[#d40372]"
+                class="font-semibold transition-colors hover:text-pinky"
                 >FAQ</a
               >
             </li>
@@ -108,7 +110,7 @@
               class="w-36 h-12 px-6 text-lg text-white text-center transition-colors duration-150 bg-pinky rounded-lg focus:drop-shadow-md hover:bg-pinkyd active:scale-95"
               type="submit"
             >
-            Order Now
+              Order Now
             </button>
           </div>
         </div>
@@ -124,125 +126,117 @@
       <!-- Cards Heading -->
       <div class="flex space-x-1 justify-start m-10">
         <div class="font-bold text-xl">Our</div>
-        <div class="font-bold text-xl text-[#d40372]">Cupcakes</div>
+        <div class="font-bold text-xl text-pinky">Cupcakes</div>
       </div>
       <!-- Card layout -->
       <section class="flex flex-wrap justify-around gap-4 mb-20" id="cards">
         <!-- CARD 1 -->
-        
-          <div
-            class="border border-[#d40372] max-w-sm rounded-xl overflow-hidden"
-          >
-            <!-- Card Img -->
-            <img
-              class="p-4 object-cover h-80 w-96 rounded-lg"
-              src="./src/assets/cupcake_1.jpg"
-              alt="Classic Vanilla Bliss"
-            />
-            <!-- Text Spacing -->
-            <div class="px-6 py-6">
-              <!-- Card Heading -->
-              <div class="font-bold text-xl mb-2">Decadent White Choc</div>
-              <!-- Card Paragraph -->
-              <p class="text-gray-700 text-base">
-                Rich, moist chocolate cupcake crowned with smooth white chocolate
-                ganache and a sprinkle of fairy dust.
-              </p>
-              <!-- CTA Button -->
-              <div
-                class="flex flex-col justify-center py-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 gap-4"
-              >
-                <div
-                  class="inline-flex items-center justify-center text-center font-bold text-xl mb-2"
-                >
-                  € 4,20
-                </div>
-                <button
-              class="w-36 h-12 px-6 text-lg text-white text-center transition-colors duration-150 bg-pinky rounded-lg focus:drop-shadow-md hover:bg-pinkyd active:scale-95"
+
+        <div class="border border-pinky max-w-sm rounded-xl overflow-hidden">
+          <!-- Card Img -->
+          <img
+            class="p-4 object-cover h-80 w-96 rounded-lg"
+            src="./src/assets/cupcake_1.jpg"
+            alt="Classic Vanilla Bliss"
+          />
+          <!-- Text Spacing -->
+          <div class="px-6 py-6">
+            <!-- Card Heading -->
+            <div class="font-bold text-xl mb-2">Decadent White Choc</div>
+            <!-- Card Paragraph -->
+            <p class="text-gray-700 text-base">
+              Rich, moist chocolate cupcake crowned with smooth white chocolate
+              ganache and a sprinkle of fairy dust.
+            </p>
+            <!-- CTA Button -->
+            <div
+              class="flex flex-col justify-center py-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 gap-4"
             >
-            Order Now
-            </button>
+              <div
+                class="inline-flex items-center justify-center text-center font-bold text-xl mb-2"
+              >
+                € 4,20
               </div>
+              <button
+                class="w-36 h-12 px-6 text-lg text-white text-center transition-colors duration-150 bg-pinky rounded-lg focus:drop-shadow-md hover:bg-pinkyd active:scale-95"
+              >
+                Order Now
+              </button>
             </div>
           </div>
-        
+        </div>
 
         <!-- CARD 2 -->
-        
-          <div
-            class="border border-[#d40372] max-w-sm rounded-xl overflow-hidden"
-          >
-            <!-- Card Img -->
-            <img
-              class="p-4 object-cover h-80 w-96 rounded-lg"
-              src="./src/assets/cupcake_2.jpg"
-              alt="Classic Vanilla Bliss"
-            />
-            <!-- Text Spacing -->
-            <div class="px-6 py-6">
-              <!-- Card Heading -->
-              <div class="font-bold text-xl mb-2">Blueberry Lemon Burst</div>
-              <!-- Card Paragraph -->
-              <p class="text-gray-700 text-base">
-                Light and tangy lemon-infused cupcake topped with citrus
-                buttercream and blueberries for a refreshing twist.
-              </p>
-              <!-- CTA Button -->
-              <div
-                class="flex flex-col justify-center py-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 gap-4"
-              >
-                <div
-                  class="inline-flex items-center justify-center text-center font-bold text-xl mb-2"
-                >
-                  € 4,60
-                </div>
-                <button
-              class="w-36 h-12 px-6 text-lg text-white text-center transition-colors duration-150 bg-pinky rounded-lg focus:drop-shadow-md hover:bg-pinkyd active:scale-95"
+
+        <div class="border border-pinky max-w-sm rounded-xl overflow-hidden">
+          <!-- Card Img -->
+          <img
+            class="p-4 object-cover h-80 w-96 rounded-lg"
+            src="./src/assets/cupcake_2.jpg"
+            alt="Classic Vanilla Bliss"
+          />
+          <!-- Text Spacing -->
+          <div class="px-6 py-6">
+            <!-- Card Heading -->
+            <div class="font-bold text-xl mb-2">Blueberry Lemon Burst</div>
+            <!-- Card Paragraph -->
+            <p class="text-gray-700 text-base">
+              Light and tangy lemon-infused cupcake topped with citrus
+              buttercream and blueberries for a refreshing twist.
+            </p>
+            <!-- CTA Button -->
+            <div
+              class="flex flex-col justify-center py-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 gap-4"
             >
-            Order Now
-            </button>
+              <div
+                class="inline-flex items-center justify-center text-center font-bold text-xl mb-2"
+              >
+                € 4,60
               </div>
+              <button
+                class="w-36 h-12 px-6 text-lg text-white text-center transition-colors duration-150 bg-pinky rounded-lg focus:drop-shadow-md hover:bg-pinkyd active:scale-95"
+              >
+                Order Now
+              </button>
             </div>
           </div>
-        
+        </div>
 
         <!-- CARD 3 -->
-        
-          <div
-            class="border border-[#d40372] max-w-sm rounded-xl overflow-hidden"
-          >
-            <!-- Card Img -->
-            <img
-              class="p-4 object-cover h-80 w-96 rounded-lg"
-              src="./src/assets/cupcake_3.jpg"
-              alt="Classic Vanilla Bliss"
-            />
-            <!-- Text Spacing -->
-            <div class="px-6 py-6">
-              <!-- Card Heading -->
-              <div class="font-bold text-xl mb-2">Classic Vanilla Bliss</div>
-              <!-- Card Paragraph -->
-              <p class="text-gray-700 text-base">
-                Fluffy vanilla sponge topped with a swirl of creamy buttercream
-                frosting and a touch of rainbow sprinkles for a timeless treat.
-              </p>
-              <!-- CTA Button -->
-              <div
-                class="flex flex-col justify-center py-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 gap-4"
-              >
-                <div
-                  class="inline-flex items-center justify-center text-center font-bold text-xl mb-2"
-                >
-                  € 4,90
-                </div>
-                <button
-              class="w-36 h-12 px-6 text-lg text-white text-center transition-colors duration-150 bg-pinky rounded-lg focus:drop-shadow-md hover:bg-pinkyd active:scale-95"
+
+        <div class="border border-pinky max-w-sm rounded-xl overflow-hidden">
+          <!-- Card Img -->
+          <img
+            class="p-4 object-cover h-80 w-96 rounded-lg"
+            src="./src/assets/cupcake_3.jpg"
+            alt="Classic Vanilla Bliss"
+          />
+          <!-- Text Spacing -->
+          <div class="px-6 py-6">
+            <!-- Card Heading -->
+            <div class="font-bold text-xl mb-2">Classic Vanilla Bliss</div>
+            <!-- Card Paragraph -->
+            <p class="text-gray-700 text-base">
+              Fluffy vanilla sponge topped with a swirl of creamy buttercream
+              frosting and a touch of rainbow sprinkles for a timeless treat.
+            </p>
+            <!-- CTA Button -->
+            <div
+              class="flex flex-col justify-center py-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 gap-4"
             >
-            Order Now
-            </button>
+              <div
+                class="inline-flex items-center justify-center text-center font-bold text-xl mb-2"
+              >
+                € 4,90
               </div>
+              <button
+                class="w-36 h-12 px-6 text-lg text-white text-center transition-colors duration-150 bg-pinky rounded-lg focus:drop-shadow-md hover:bg-pinkyd active:scale-95"
+              >
+                Order Now
+              </button>
+            </div>
           </div>
-        
+        </div>
       </section>
     </main>
 
@@ -258,21 +252,21 @@
             <li>
               <a
                 href="#about"
-                class="font-semibold transition-colors hover:text-[#d40372]"
+                class="font-semibold transition-colors hover:text-pinky"
                 >About</a
               >
             </li>
             <li>
               <a
                 href="#blog"
-                class="font-semibold transition-colors hover:text-[#d40372]"
+                class="font-semibold transition-colors hover:text-pinky"
                 >Blog</a
               >
             </li>
             <li>
               <a
                 href="#support"
-                class="font-semibold transition-colors hover:text-[#d40372]"
+                class="font-semibold transition-colors hover:text-pinky"
                 >Support</a
               >
             </li>
@@ -281,8 +275,8 @@
 
         <!-- Centered Title -->
         <div class="text-center order-first md:order-none">
-          <h1 id="title-footer">
-            <span class="text-[#d40372]">Sweet Delights</span>
+          <h1 id="title-footer" class="text-lg font-bold">
+            <span class="text-pinky">Sweet Delights</span>
             <span class="text-black">Cupcakes</span>
           </h1>
         </div>
@@ -295,21 +289,21 @@
             <li>
               <a
                 href="#home"
-                class="font-semibold transition-colors hover:text-[#d40372]"
+                class="font-semibold transition-colors hover:text-pinky"
                 >Our Menu</a
               >
             </li>
             <li>
               <a
                 href="#press"
-                class="font-semibold transition-colors hover:text-[#d40372]"
+                class="font-semibold transition-colors hover:text-pinky"
                 >Press</a
               >
             </li>
             <li>
               <a
                 href="#faq"
-                class="font-semibold transition-colors hover:text-[#d40372]"
+                class="font-semibold transition-colors hover:text-pinky"
                 >FAQ</a
               >
             </li>
@@ -322,7 +316,7 @@
         <p class="text-center text-xs">
           © Made with 🩷 -
           <a
-            class="transition-colors hover:text-[#d40372] underline"
+            class="transition-colors hover:text-pinky underline"
             href="#privacy-terms"
             >Privacy - Terms</a
           >
